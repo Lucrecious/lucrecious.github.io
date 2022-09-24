@@ -114,7 +114,14 @@
 	</style>
 <link id='-gd-engine-icon' rel='icon' type='image/png' href='index.icon.png' />
 <link rel='apple-touch-icon' href='index.apple-touch-icon.png'/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
 
+<script type="text/javascript">
+  function save_file(content) {
+    var myFile = new File([content], "demo.txt", {type: "text/plain;charset=utf-8"});
+    saveAs(myFile);
+  }
+</script>
 </head>
 <body>
 	<canvas id='canvas'>
@@ -139,7 +146,7 @@
 	<script type='text/javascript' src='index.js'></script>
 	<script type='text/javascript'>//<![CDATA[
 
-		const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":13376560,"index.wasm":13788612},"focusCanvas":false,"gdnativeLibs":[]};
+		const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":13407936,"index.wasm":13788612},"focusCanvas":false,"gdnativeLibs":[]};
 		var engine = new Engine(GODOT_CONFIG);
 
 		(function() {
